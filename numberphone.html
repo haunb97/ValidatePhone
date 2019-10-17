@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>phone</title>
+</head>
+<body>
+<script>
+    function VilidatePhone(number) {
+        regex = /^\([0-9]{2}\)\-\([0-9]{10}\)$/;
+        if(regex.test(number)){
+            console.log('hop le');
+
+        }
+        else(console.log('khong hop le'));
+    }
+    let num1 = '(84)-(0978489648)';
+    VilidatePhone(num1);
+    let num2 = '(a8)-(22222222)';
+    VilidatePhone(num2);
+</script>
+</body>
+</html>
